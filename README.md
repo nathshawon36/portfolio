@@ -8,4 +8,9 @@
 - Anyone can easily download CV, contact and create BLOG 
 
 ## Desktop View:
-!['portfolio'](desktopView.png)
+
+![Site Preview](Annotation.png)
+
+## Phone View:
+
+![Site Preview](phone.PNG)    ![Site Preview](phone1.PNG)
