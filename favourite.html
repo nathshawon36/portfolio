@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Favourites</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>
+		<link rel="stylesheet" href="modify.css">
+	</head>
+	
+	<body>
+		<div class='favourites'>
+			
+			<div class="card card-body py-4 fav">
+			<a href='newModify.html' class='h1 text-white'>Favourites</a>
+			</div>			
+			<div class="card card-body py-5">
+				<div class="row no-gutters">
+
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=253" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=254" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=255" alt="" class="img-fluid">
+						</a>
+					</div>
+										<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery">
+							<img src="https://unsplash.it/600.jpg?image=252" alt="" class="img-fluid">
+						</a>
+					</div>
+				</div>
+				
+				<div class="row no-gutters">
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=256" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=257" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=258" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=259" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=259" alt="" class="img-fluid">
+						</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+		
+		<script>
+			$('.port-item').click(function () {
+				$('.collapse').collapse('hide');
+			});
+			
+			$(document).on('click', '[data-toggle="lightbox"]', function (e) {
+				e.preventDefault();
+				$(this).ekkoLightbox();
+			});
+		</script>
+	</body>
+</html>
